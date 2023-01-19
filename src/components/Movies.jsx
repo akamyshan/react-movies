@@ -1,15 +1,12 @@
 import { Movie } from "./Movie";
 
 function Movies(props) {
+    const { movies } = props;
+
     return (
         <div className="movies">
-            {props.moviesList.map((movie) => (
-                <Movie
-                    title={movie.Title}
-                    type={movie.Type}
-                    year={movie.Year}
-                    poster={movie.Poster}
-                />
+            {movies.map((movie) => (
+                <Movie key={movie.imdbID} {...movie} />
             ))}
         </div>
     );
