@@ -22,3 +22,13 @@ nav {
   /* grid-auto-rows: 1fr; */
   gap: 1rem;  
 }
+
+.preloader {
+  margin: 10% 0;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
