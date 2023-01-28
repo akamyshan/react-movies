@@ -32,3 +32,8 @@ nav {
   top: 0;
   right: 0.5rem;
 }
+
+.type-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
