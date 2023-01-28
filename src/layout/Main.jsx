@@ -14,6 +14,9 @@ class Main extends React.Component {
 
     searchMovies = (search = "matrix", type = "all") => {
         this.setState({ loading: true });
+        if (search === "") {
+            search = "matrix";
+        }
         fetch(
             `https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}${
                 type !== "all" ? `&type=${type}` : ""
